@@ -4,103 +4,7 @@
 <head>
     <title>My site</title>
     <meta charset="UTF-8">
-    <style>
-        /* When we use relative positioning it does not affect the order of html and maintains the postion of other by replacing it with a ghost element. */
-
-/* When we use absolute positioning then it affects the order of html moves it out of the order and the relative order of other elements are affected by using this. */
-
-body {
-    text-align: center;
-    margin: 0;
-    font-family: 'Merriweather', serif;
-}
-
-h1 {
-    /* display: inline; */
-    /* 1 em = 16 px = 100% font size */
-    margin:50px auto 0 auto;
-    font-family: 'Sacramento', cursive;
-    font-size: 6.25em;
-    /* margin-block-end: 0;
-    margin-block-start: 0; */
-    /* line-height: 2; Preffered way of giving is the number, value will be font-size * 2. */
-    color: #66BFBF;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem; /*Means root em and it will not affected if we specify the font size in the body (parent element).*/
-    font-weight: normal;
-    color: #66BFBF;
-
-}
-
-h3 {
-    color: #11999E;
-    font-family: 'Montserrat', sans-serif;
-}
-
-p {
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    /* display: inline; This will change the default block of p tag to inline element and make it an inline element. */
-}
-
-.first-cloud {
-    position: absolute;
-    top: 50px;   
-    right: 20%;
-    
-}
-
-.second-cloud {
-    position: absolute;
-    bottom: 40%;
-
-}
-
-.full-stack-img {
-    width: 25%;
-    float: left;
-    padding: 30px; 
-}
-.programmer-img {
-    width: 25%;
-    float: right;
-    padding: 30px; 
-}
-
-
-.top-container {
-    background-color: #E4F9F5;
-    margin: 0;
-    padding-top: 100px;
-    position: relative;
-    
-}
-
-.skill-row {
-    width: 50%;
-    margin: 100px auto 120px auto; 
-    text-align: left;
-    line-height: 2;
-}
-
-
-/* .middle-container {
-    background-color: #F1EFEF;
-    height: 200px;
-    width: 200px;
-    position: relative; this tag changes the position of the element w.r.t to its default position defined by the html code we have written.
-    top: 20px; this will push the middle div on top of the bottom div. 
-}
-
-.bottom-container {
-    background-color: #7D7C7C;
-    height: 200px;
-    width: 200px;
-} */
-    </style>
+    <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="icon" href="M.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -122,30 +26,36 @@ p {
 
     <div class="middle-container">
         <div class="profile">
-            <img src="myphoto.png" alt="My-photo" width="300">
+            <img class="profile-img" src="myphoto.png" alt="My-photo">
             <h2>Hello everyone.</h2>
-            <p>I am an undergrad a full stack Web Developer having a good knowledge about MERN stack and I love playing pubg 😁.
+            <p class="intro">I am an undergrad a full stack Web Developer having a good knowledge about MERN stack and I love playing pubg 😁.
             </p>
         </div>
         <hr>
         <div class="skills">
+
+            <hr>
+
             <h2>My Skills.</h2>
             <div class="skill-row">
                 <img class="full-stack-img" src="data.png" alt="computer-image">
                 <h3>Full Stack Web Developer</h3>
-                <p>I know MERN stack and I have been working on many projects handling fronted and backend.</p>
+                <p class="skill-desc-1">I know MERN stack and I have been working on many projects handling fronted and backend.</p>
             </div>
             <div class="skill-row">
                 <img class="programmer-img" src="programmer.png" alt="smilie">
                 <h3>An Excelent Programmer.</h3>
-                <p>I know python, C, C+ fundamentals very well and I had made certain projects using python, C++ which I had linked so do have a glimpse of it.</p>
+                <p class="skill-desc-2">I know python, C, C+ fundamentals very well and I had made certain projects using python, C++ which I had linked so do have a glimpse of it.</p>
             </div>
         </div>
         <hr>
         <div class="contact-me">
+            
+            <hr>
+
             <h2>Get In Touch</h2>
             <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-            <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
+            <p class="outro">Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
             <a class="btn" href="mailto:mehulsharma267@gmail.com">CONTACT ME</a>
         </div>
     </div>
@@ -155,7 +65,7 @@ p {
         <a class="footer-link" href="https://www.linkedin.com/in/mehul-sharma-29016b261/ ">LinkedIn</a>
         <a class="footer-link" href="https://twitter.com/MehulSharma2004">Twitter</a>
         <a class="footer-link" href="https://mehulsharma-259.github.io/CV/">Website</a>
-        <p>© Mehul Sharma.</p>
+        <p class="copy-right">© 2023 Mehul Sharma.</p>
     </div>
 
 </body>
